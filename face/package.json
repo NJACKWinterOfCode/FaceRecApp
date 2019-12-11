@@ -2,6 +2,7 @@
   "name": "face",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://localhost:3000",
   "dependencies": {
     "clarifai": "^2.9.0",
     "react": "^16.6.3",
