@@ -1,0 +1,19 @@
+{
+    "name": "new",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+      "concurrently": "^5.0.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "client": "cd face && npm start",
+      "server": "cd faceApi && npm start",
+      "dev": "concurrently \"npm run server \" \"npm run client\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
