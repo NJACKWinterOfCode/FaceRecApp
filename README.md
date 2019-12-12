@@ -9,7 +9,5 @@ Currently uses an api (clarify api) can detect multiple faces in an image .
 3. Run `npm install`
 4. Move to face dir
 5. Run `npm install`
-6. Run `npm start` 
-7. Change to FaceApi dir
-8. Run `npm start`
-9. Enjoy the project at `localhost:3000`
+6. Run `npm run dev`
+7. Enjoy the project at `localhost:3000`
