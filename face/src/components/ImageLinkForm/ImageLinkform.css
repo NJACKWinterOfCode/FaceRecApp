@@ -1,0 +1,41 @@
+.headline{
+    color: white;
+}
+.input-area{
+    background-color: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-color: aquamarine;
+    width: 50%;
+    height: 60px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #34495e;
+    outline: none;
+    font: 300 28px 'Ubuntu', sans-serif;
+    padding: 20px;
+    color: #b4cee9;
+}
+.input-area:hover{
+    border-bottom-style: groove;
+    border-bottom-color: aquamarine;
+    border-width: 3px;
+}
+
+.detectbtn{
+    background-color: #1c86f7;
+    border: 0;
+    width: 80px;
+    color: blanchedalmond;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.detectbtn:hover{
+    transform: scale(1.03);
+    background-color: #90bdee;
+    color:black;
+}
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+.headline{
+    font-family: 'Source Code Pro', monospace;
+}

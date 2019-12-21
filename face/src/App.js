@@ -92,7 +92,7 @@ const ParticleOptions = {
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab"
+        "mode": "repulse"
       },
       "onclick": {
         "enable": true,
@@ -133,7 +133,7 @@ class App extends Component {
     input: '',
     imageUrl: '',
     box: [],
-    route: 'signUp',
+    route: 'home',
     loading: false,
     signedIn: false,
     user: {
