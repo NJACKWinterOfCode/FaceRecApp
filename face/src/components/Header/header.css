@@ -1,0 +1,147 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+body {
+    overflow: hidden;
+    background: #000;
+}
+.wrapper {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: 0px;
+    transform: translateX(-50%) translateY(-50%) scale(2);
+}
+.glitch {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    position: relative;
+    animation: shake 0.4s infinite;
+    animation-direction: alternate;
+}
+.glitch_fixed {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    position: relative;
+    color: #eee;
+    animation: color 0.4s infinite;
+    animation-direction: alternate;
+}
+.glitch_opacity {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    position: relative;
+    color: #eee;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    animation: show 0.2s infinite;
+    animation-direction: alternate;
+}
+.glitch_opacity span {
+    color: #f802f890;
+}
+@keyframes show {
+    50% {
+        opacity: 0;
+        text-shadow: 2px 2px #bedd6d;
+   }
+}
+@keyframes color {
+    50% {
+        color: #b1b1b1;
+   }
+}
+@keyframes shake {
+    0% {
+        transform: translate(2px, 1px) rotate(0deg);
+   }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+   }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+   }
+    30% {
+        transform: translate(0px, 2px) rotate(0deg);
+   }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+   }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+   }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+   }
+    70% {
+        transform: translate(2px, 1px) rotate(-1deg);
+   }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+   }
+    90% {
+        transform: translate(2px, 2px) rotate(0deg);
+   }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+   }
+}
+.span, .glitch span:first-child, .glitch span:nth-child(2), .glitch span:nth-child(3), .glitch span:nth-child(4), .glitch span:nth-child(5), .glitch span:nth-child(6) {
+    color: #0301fa;
+    animation: glitch 0.4s linear infinite;
+    animation-direction: alternate;
+    position: absolute;
+    transform: translateY(0px);
+}
+.glithc span {
+    position: absolute;
+}
+.glitch span:first-child {
+    left: 0;
+}
+.glitch span:nth-child(2) {
+    left: 25px;
+}
+.glitch span:nth-child(3) {
+    left: 50px;
+}
+.glitch span:nth-child(4) {
+    left: 75px;
+}
+.glitch span:nth-child(5) {
+    left: 100px;
+}
+.glitch span:nth-child(6) {
+    left: 125px;
+}
+@keyframes glitch {
+    0% {
+        transform: translateY(-10%);
+        transform: translateX(-5%);
+   }
+    50% {
+        transform: translateY(-10%);
+        transform: translateX(-10%);
+        color: #01fa01;
+   }
+    100% {
+        transform: translateY(10%);
+        transform: translateX(5%);
+        color: #fa0103;
+        clip: rect(40px, 0px, 40px, 0px);
+   }
+}
+.tag{
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 9px ;
+}
