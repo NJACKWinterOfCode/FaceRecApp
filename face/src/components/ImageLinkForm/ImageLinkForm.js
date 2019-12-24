@@ -1,18 +1,16 @@
 import React from 'react';
-
+import "./ImageLinkform.css"
 
 
 const imageLinkForm = ({ onChangeEvent, onClickEvent }) => {
     return (
-        <div className="ma4 mt0">
-            <p className="f3">
+        <div className="image-form">
+            <p className="headline">
                 {"This Magic Brain Will detect faces in your pictures !"}
             </p>
             <div className="center">
-                <div className="pattern pa4 br3 shadow-4 center">
-                    <input onChange={onChangeEvent} className="w-70 f4 pa2 center" type="text" />
-                    <button onClick={onClickEvent} className="btn w-3- grow f4 link ph3 pv2 dib white bg-green white">Detect</button>
-                </div>
+                    <input onChange={onChangeEvent} className="input-area" type="text" placeholder="Type Image URL" />
+                    <button onClick={onClickEvent} className="detectbtn">Detect</button>
             </div>
         </div >
     )
